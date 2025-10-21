@@ -7,7 +7,7 @@ const increaseBtn = document.getElementById('increase');
 
 // STEP 2: CREATE A VARIABLE TO TRACK THE COUNT
 // This is like a box that holds our number
-let count = 0;
+let count = 100;
 
 // STEP 3: CREATE FUNCTIONS (reusable blocks of code)
 
@@ -19,8 +19,10 @@ function increase() {
 
 // This function decreases the count
 function decrease() {
+    if (count > 0) {
     count = count - 1;  // or count--
     counterDisplay.textContent = count;
+    }
 }
 
 // This function resets the count to 0
