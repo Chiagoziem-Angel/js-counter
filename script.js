@@ -19,7 +19,7 @@ function increase() {
 
 // This function decreases the count
 function decrease() {
-    if (count > 0) {
+    if (count > 100) {
     count = count - 1;  // or count--
     counterDisplay.textContent = count;
     }
